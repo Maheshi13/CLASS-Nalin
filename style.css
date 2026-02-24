@@ -63,7 +63,7 @@ body {
     padding: 0px;
     flex: 1;
     text-align: center;
-    background-color: #d2d3f8;
+    background-color: rgb(222, 221, 235);
     border-radius: 12px;
     opacity: 0.95;
 
@@ -259,4 +259,5 @@ footer {
     top: 35%;
     right: 18%;
     width: 200px;
+
 }
