@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPortal | Video Lessons</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="top-nav">
+        <div class="nav-content">
+             <div class="logo">úoHdfõ fkduEflk i,l=K </div>
+            <div class="nav-links">
+                <a href="#footer">Contact Support</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div>
+        <img src="Nalin.png" alt="logo" style="float: left; margin: 0 0 0 110px; height: 9.8%; width: 25%;">
+        <header class="hero">
+            <div class="title-row">
+
+               <h1 class="title">විද්‍යාව</h1>
+               <div class="grade">6-11 ශ්‍රේණි සදහා</div>
+            </div>
+
+            <div class ='text-container'>
+                <ul class="text-list" style="list-style-type: none; padding-left: 0;">
+               <li>➤ එක් දිනකට එක් පාඩමක් ආවරණය කරයි </li>
+               <li>➤ සියලු පාඩම් <b>Youtube</b> ඔස්සේ නැවත නැරඹිය හැකිය</li> 
+               <li>➤ සියල්ලටම කලියෙන් පාඩම් ආවරණය කරයි </li>
+               <li>➤ පේපර් ලිවීම සහ සාකච්චාව සදහා වැඩි අවධානය </li>
+               <li>➤ ඔබේ ස්ථානය දැන්ම වෙන් කරවා ගන්න... </li>
+            </ul>
+            </div>
+              
+        </header>
+        </div>
+        
+        <div class="bg-icons">
+             <img src="images/DNA.png" class="icon icon1">
+             <img src="images/microscope.png" class="icon icon2">
+             <img src="images/flask.png" class="icon icon3">
+             <img src="images/bulb.png" class="icon icon4">
+             <img src="images/bacteria.png" class="icon icon5">
+             <img src="images/magnet.png" class="icon icon6">
+             <img src="images/tube.png" class="icon icon7">
+        </div> 
+
+        <div class="grade-selector">
+            <button class="g-btn" onclick="filterVideos('6', this)">06 ශ්‍රේණිය </button>
+            <button class="g-btn" onclick="filterVideos('7', this)">07 ශ්‍රේණිය </button>
+            <button class="g-btn" onclick="filterVideos('8', this)">08 ශ්‍රේණිය </button>
+            <button class="g-btn" onclick="filterVideos('9', this)">09 ශ්‍රේණිය </button>
+            <button class="g-btn" onclick="filterVideos('10', this)">10 ශ්‍රේණිය </button>
+            <button class="g-btn" onclick="filterVideos('11', this)">11 ශ්‍රේණිය </button>
+        </div>
+
+        <main id="video-display">
+            <div id="status-msg" class="status-msg">ඔබේ ශ්‍රේණිය තෝරන්න....</div>
+            <div id="video-grid" class="video-grid"></div>
+        </main>
+    </div>
+
+    <footer id="footer">
+        <div class="footer-wrap">
+            <div class="contact-box">
+                <h3>Contact Support</h3>
+                <p>Email: help@eduportal.com</p>
+                <p>WhatsApp: +94 7X XXX XXXX</p>
+            </div>
+            <div class="copy-bar">
+                &copy; 2026 EduPortal. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+:root {
+    --primary: #2563eb;
+    --dark: #0f172a;
+    --bg: #dae2e9;
+}
+
+@font-face {
+    font-family: 'SinhalaFont1';
+    src: url('fonts/sinhala1.ttf') format('truetype');
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Navigation */
+.top-nav {
+    width: 100%;
+    height: 70px;
+    background: rgb(232, 224, 248);
+    border-bottom: 1px solid #e2daf3;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {font-family: 'SinhalaFont1' !important; 
+       color:#252627;
+        font-size: 1.8rem;
+    }
+
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Layout */
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin-top: 30px;
+    padding: 0px;
+    flex: 1;
+    text-align: center;
+    background-color: #d2d3f8;
+    border-radius: 12px;
+    opacity: 0.95;
+
+}
+
+.hero {
+    position:relative;
+    text-align: center;
+    margin-top:60px;
+    margin-bottom: 0;
+   
+}
+
+.hero img {
+    display: block;
+}
+
+.title {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 120px;
+    color: #182978;
+    margin:0;
+    line-height:0.8;
+   
+    /*text-shadow: 4px 4px 0px rgb(128, 101, 101);*/
+    
+}
+.title-row {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.grade {     
+    background: rgb(75, 30, 199);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 10px;
+    font-size: 18px;
+    transform: translateY(60px) translateX(-60px);
+    
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.hero text-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    width:100%;
+    padding: 0px;
+
+}
+.text-list {
+    display:inline-block; 
+    padding: 0;
+    margin: 45px 0 39px 0;
+    text-align:left; 
+}
+.text-list li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* සිංහල fonts ලස්සනට පේන්න */
+    font-size: 20px;
+    margin:8px 0;
+    line-height: 1;
+    color:#050b1a
+}
+
+/* Grade Buttons */
+.grade-selector {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.g-btn {
+    padding: 12px 24px;
+    background: white;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.3s;
+    font-size: 20px;
+
+}
+
+.g-btn:hover { border-color: var(--primary); color: var(--primary); }
+.g-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+
+.status-msg {
+    font-size: 1.2rem;
+    color: #334155;
+    margin-bottom: 50px;
+}
+/* Grid */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    width: 100%;
+}
+
+.v-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.v-card iframe { width: 100%; aspect-ratio: 16/9; border: none; }
+.v-card h3 { padding: 15px; margin: 0; font-size: 1rem; }
+
+/* Footer */
+footer {
+    width: 100%;
+    background: var(--dark);
+    color: white;
+    padding: 60px 20px 20px;
+    margin-top: 60px;
+}
+
+.footer-wrap { max-width: 1100px; margin: 0 auto; text-align: center; }
+.contact-box h3 { color: var(--primary); }
+.contact-box p { color: #94a3b8; margin: 5px 0; }
+.copy-bar {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #334155;
+    color: #64748b;
+    font-size: 0.8rem;
+}
+
+.bg-icons {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;  /* click block wenna epa */
+    z-index: -1;           /* background ekata yanna */
+}
+
+.icon {
+    position: absolute;
+    opacity: 0.08;  /* fade effect */
+}
+
+.icon1 {
+    top: 10%;
+    left: 0.5%;
+    width: 180px;
+}
+
+.icon2 {
+    top: 15%;
+    right: 55%;
+    width: 180px;
+}
+
+.icon3 {
+    bottom: 0%;
+    left: 8%;
+    width: 200px;
+}
+
+.icon4 {
+    bottom: 3%;
+    right: 2%;
+    width: 150px;
+}
+
+.icon5 {
+    top: 3%;
+    right: 10%;
+    width: 200px;
+}
+
+.icon6 {
+    top: 58%;
+    right: 40%;
+    width: 150px;
+}
+
+.icon7 {
+    top: 35%;
+    right: 18%;
+    width: 200px;
+}
