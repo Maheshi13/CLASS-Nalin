@@ -79,6 +79,11 @@ body {
 
 .hero img {
     display: block;
+    width: 25%;
+    height: 9.8%;
+    margin: 0 0 0 110px;
+    float: left;
+        
 }
 
 .title {
@@ -259,5 +264,57 @@ footer {
     top: 35%;
     right: 18%;
     width: 200px;
+}
+
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .title {
+        font-size: 48px;
+        line-height: 1.1;
+        text-align: center;
+    }
+
+    .grade {
+        font-size: 14px;
+        padding: 6px 12px;
+        transform: none;
+        margin-top: 10px;
+    }
+
+    .title-row {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    img {
+        float: none !important;
+        display: block;
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .text-list {
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .text-list li {
+        font-size: 16px;
+    }
+
+    .grade-selector {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .g-btn {
+        width: 80%;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
 
 }
