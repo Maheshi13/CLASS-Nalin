@@ -80,7 +80,7 @@ body {
 .hero img {
     display: block;
     width: 25%;
-    height: 9.8%;
+    height: auto;
     margin: 0 0 0 110px;
     float: left;
         
@@ -237,8 +237,8 @@ footer {
 }
 
 .icon3 {
-    bottom: 0%;
-    left: 8%;
+    bottom: 15%;
+    left:5%;
     width: 200px;
 }
 
@@ -266,6 +266,12 @@ footer {
     width: 200px;
 }
 
+.icon8 {
+    top: 78%;
+    left: 25%;
+    width: 170px;
+}
+
 
 /* ================= MOBILE FIX ================= */
 @media (max-width: 768px) {
@@ -281,14 +287,15 @@ footer {
     }
 
     .hero img {
-        width: 200px;
+        width: 60%;
+        height: auto;
         float: none !important;
         margin: 0 auto 10px auto !important;
         display: block;
     }
 
     .title {
-        font-size: 75px;
+        font-size: 100px;
         line-height: 1.1;
         text-align: center;
     }
@@ -300,7 +307,7 @@ footer {
 
     .grade {
         transform: none;
-        font-size: 14px;
+        font-size: 16px;
         padding: 6px 14px;
         border-radius: 10px;
     }
@@ -340,44 +347,51 @@ footer {
     }
 
     .icon1 {
-        width: 90px;
-        top: 5%;
-        left: 2%;
+        width: 120px;
+        top: 8%;
+        left: -2%;
     }
 
     .icon2 {
-        width: 80px;
-        top: 18%;
+        width: 120px;
+        top: 25%;
         right: 5%;
     }
 
     .icon3 {
-        width: 100px;
-        bottom: 5%;
-        left: 5%;
+        width: 160px;
+        bottom: 10%;
+        left: 2%;
     }
 
     .icon4 {
-        width: 80px;
-        bottom: 3%;
-        right: 3%;
-    }
-
-    .icon5 {
-        width: 90px;
-        top: 2%;
-        right: 20%;
-    }
-
-    .icon6 {
-        width: 80px;
-        top: 55%;
+        width:120px;
+        bottom: 1%;
         right: 10%;
     }
 
-    .icon7 {
-        width: 100px;
-        top: 35%;
-        left: 10%;
+    .icon5 {
+        width: 120px;
+        top: 4%;
+        right: 10%;
     }
+
+    .icon6 {
+        width:120px;
+        top: 50%;
+        right: 30%;
+    }
+
+    .icon7 {
+        width: 160px;
+        top: 29%;
+        left: -1%;
+    }
+
+    .icon8 {
+    top: 100%;
+    left: 5%;
+    width: 150px;
+    }
+
 }
