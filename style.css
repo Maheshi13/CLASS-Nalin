@@ -281,7 +281,7 @@ footer {
     }
 
     .hero img {
-        width: 200px !important;
+        width: 200px;
         float: none !important;
         margin: 0 auto 10px auto !important;
         display: block;
@@ -381,3 +381,4 @@ footer {
         left: 10%;
     }
 }
+
