@@ -46,6 +46,22 @@ function filterVideos(grade, btn) {
             </div>
         `;
     });
+
+    setTimeout(() => {
+        document.getElementById("video-display")
+            .scrollIntoView({ behavior: "smooth" });
+    }, 100);
 }
 
-init();
+function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("show");
+}
+/* Optional: Close menu after click */
+document.querySelectorAll(".mobile-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+        document.getElementById("mobileMenu").classList.remove("show");
+    });
+});
+
+init(); 
