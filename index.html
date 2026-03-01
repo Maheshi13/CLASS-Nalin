@@ -9,39 +9,48 @@
 </head>
 <body>
 
-    <nav class="top-nav">
-        <div class="nav-content">
-             <div class="logo">úoHdfõ fkduEflk i,l=K </div>
-            <div class="nav-links">
-                <a href="#footer">Contact </a>
-            </div>
-        </div>
-    </nav>
+<!-- ✅ NAVIGATION BAR -->
+<nav class="top-nav">
+  <div class="nav-content">
+     <div class="hamburger" onclick="toggleMenu()">☰</div>
+    
+    <!-- PC VIEW -->
+    <div style="display:flex;">
+      <div class="nav-left">
+        <a href="#">Home</a>
+      </div>
 
-    <div class="container">
-        <div>
-        <header class="hero">
-            <img src="Nalin.png" alt="logo">
-            <div class="title-row">
+      <div class="nav-right">
+        <a href="#footer">Contact</a>
+      </div>
+    </div>
 
-               <h1 class="title">විද්‍යාව</h1>
-               <div class="grade">6-11 ශ්‍රේණි සදහා</div>
-            </div>
+    
 
-            <div class ='text-container'>
-                <ul class="text-list" style="list-style-type: none; padding-left: 0;">
-               <li>➤ එක් දිනකට එක් පාඩමක් ආවරණය කරයි </li>
-               <li>➤ සියලු පාඩම් <b>Youtube</b> ඔස්සේ නැවත නැරඹිය හැකිය</li> 
-               <li>➤ සියල්ලටම කලියෙන් පාඩම් ආවරණය කරයි </li>
-               <li>➤ පේපර් ලිවීම සහ සාකච්චාව සදහා වැඩි අවධානය </li>
-               <li>➤ ඔබේ ස්ථානය දැන්ම වෙන් කරවා ගන්න... </li>
-            </ul>
-            </div>
-              
-        </header>
-        </div>
-        
-        <div class="bg-icons">
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+      <a href="#">Home</a>
+      <a href="#footer">Contact</a>
+  </div>
+</nav>
+
+<div class="container">
+<header class="hero">
+    <img src="Nalin.png" alt="logo">
+
+    <div class="title-row">
+        <h1 class="title">නලින් S කුළතුංග</h1>
+        <h3 class="logo">úoHdfõ fkduEflk i,l=K</h3>
+    </div>
+
+    <div class="subject-box">
+       <h2>විද්‍යාව</h2>
+       <p>6-11 ශ්‍රේණි සඳහා</p>
+    </div>
+
+     <div class="bg-icons">
              <img src="images/DNA.png" class="icon icon1">
              <img src="images/microscope.png" class="icon icon2">
              <img src="images/flask.png" class="icon icon3">
@@ -50,36 +59,52 @@
              <img src="images/magnet.png" class="icon icon6">
              <img src="images/tube.png" class="icon icon7">
              <img src="images/saturn.png" class="icon icon8">
-        </div> 
+             <img src="images/petri-dishes.png" class="icon icon9">
+             <img src="images/thermometer.png" class="icon icon10">
+             
+             
+    </div> 
 
-        <div class="grade-selector">
-            <button class="g-btn" onclick="filterVideos('6', this)">06 ශ්‍රේණිය </button>
-            <button class="g-btn" onclick="filterVideos('7', this)">07 ශ්‍රේණිය </button>
-            <button class="g-btn" onclick="filterVideos('8', this)">08 ශ්‍රේණිය </button>
-            <button class="g-btn" onclick="filterVideos('9', this)">09 ශ්‍රේණිය </button>
-            <button class="g-btn" onclick="filterVideos('10', this)">10 ශ්‍රේණිය </button>
-            <button class="g-btn" onclick="filterVideos('11', this)">11 ශ්‍රේණිය </button>
-        </div>
-
-        <main id="video-display">
-            <div id="status-msg" class="status-msg">ඔබේ ශ්‍රේණිය තෝරන්න....</div>
-            <div id="video-grid" class="video-grid"></div>
-        </main>
+    <div class="text-container">
+        <ul class="text-list" style="list-style-type: disc; padding-left:10px;">
+           <li> එක් දිනකට එක් පාඩමක් ආවරණය කරයි </li>
+           <li> සියලු පාඩම් <b>YouTube</b> ඔස්සේ නැවත නැරඹිය හැකිය</li> 
+           <li> සියල්ලටම කලියෙන් පාඩම් ආවරණය කරයි </li>
+           <li> පේපර් ලිවීම සහ සාකච්චාව සදහා වැඩි අවධානය </li>
+           <li> ඔබේ ස්ථානය දැන්ම වෙන් කරවා ගන්න... </li>
+        </ul>
     </div>
+</header>
 
-    <footer id="footer">
-        <div class="footer-wrap">
-            <div class="contact-box">
-                <h3>Contact Support</h3>
-                <p>Email: help@eduportal.com</p>
-                <p>WhatsApp: +94 7X XXX XXXX</p>
-            </div>
-            <div class="copy-bar">
-                &copy; 2026 EduPortal. All Rights Reserved.
-            </div>
+<div class="grade-selector">
+    <button class="g-btn" onclick="filterVideos('6', this)">06 ශ්‍රේණිය</button>
+    <button class="g-btn" onclick="filterVideos('7', this)">07 ශ්‍රේණිය</button>
+    <button class="g-btn" onclick="filterVideos('8', this)">08 ශ්‍රේණිය</button>
+    <button class="g-btn" onclick="filterVideos('9', this)">09 ශ්‍රේණිය</button>
+    <button class="g-btn" onclick="filterVideos('10', this)">10 ශ්‍රේණිය</button>
+    <button class="g-btn" onclick="filterVideos('11', this)">11 ශ්‍රේණිය</button>
+</div>
+
+<main id="video-display">
+    <div id="status-msg" class="status-msg">ඔබගේ ශ්‍රේණිය තෝරන්න....</div>
+    <div id="video-grid" class="video-grid"></div>
+</main>
+
+</div>
+
+<footer id="footer">
+    <div class="footer-wrap">
+        <div class="contact-box">
+            <h3>Contact Support</h3>
+            <p>Email: help@eduportal.com</p>
+            <p>WhatsApp: +94 7X XXX XXXX</p>
         </div>
-    </footer>
+        <div class="copy-bar">
+            &copy; 2026 EduPortal. All Rights Reserved.
+        </div>
+    </div>
+</footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
